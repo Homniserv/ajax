@@ -1,92 +1,109 @@
 <!DOCTYPE html>
 <HTML lang="en">
-  <HEAD>
-    <link rel="stylesheet" type="text/css" href="basic.css">
+    <HEAD>
+        <link rel="stylesheet" type="text/css" href="basic.css">
 
 
-    
-
-    <meta charset="UTF-8">
-    <!--  no Extra BOM marks -->
-    
-   
-    <meta name="description" content="Site personnel principal de Peter MOUEZA à Nantes">
-    <meta name="keywords"
-          content="Peter, MOUEZA, Nantes, BOSSIS, Homniserv, shadow, design">
-    <meta name="author" content="Peter MOUEZA">
 
 
-    <!--   -->
-    <!-- https://support.google.com/webmasters/answer/139066  amp version vs normal web version -->
-    <link hreflang="fr" rel="canonical" href="http://moueza.esy.es" />
-
-    <!--http://getbootstrap.com/css/  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
- 
-
-    <TITLE>Ajax</TITLE>
-    <!-- TODO layer cookies sessions-->
-
-	  
-	  
-	  
-    <!--link href='node_modules/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'--> 
-  <!--http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh -->
- <link rel="shortcut icon" href="http://moueza.esy.es/favicon.ico?v=2" type="image/x-icon">
- 
- 
- 
-    <link rel="icon” href=”http://moueza.esy.es/favicon.gif?v=2" type="image/gif" >
+        <meta charset="UTF-8">
+        <!--  no Extra BOM marks -->
 
 
- </HEAD>
-<BODY>
-	<h1>Ajax</h1>
-	<div class="container-fluid">
-		
-	<!--	https://getbootstrap.com/docs/4.0/layout/grid/ -->
-   <div class="row">
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-  </div>
-		
-		
-		
-		
-		<div id="demo">
-		Text 
-		</div>
+        <meta name="description" content="Site personnel principal de Peter MOUEZA à Nantes">
+        <meta name="keywords"
+              content="Peter, MOUEZA, Nantes, BOSSIS, Homniserv, shadow, design">
+        <meta name="author" content="Peter MOUEZA">
 
-</div>
-	
-	
-	
-	 
-	
-<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script -->
-<!-- script src="node_modules/bootstrap/dist/js/bootstrap.min.js"> </script -->
-	
-	
-	
-	
-	
-		  <!-- https://getbootstrap.com/docs/4.0/getting-started/download/ -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--   -->
+        <!-- https://support.google.com/webmasters/answer/139066  amp version vs normal web version -->
+        <link hreflang="fr" rel="canonical" href="http://moueza.esy.es" />
 
-<script src="js.js"> </script>
-</BODY>
+        <!--http://getbootstrap.com/css/  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+        <TITLE>Ajax</TITLE>
+        <!-- TODO layer cookies sessions-->
+
+
+
+
+        <!--link href='node_modules/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'--> 
+        <!--http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh -->
+        <link rel="shortcut icon" href="http://moueza.esy.es/favicon.ico?v=2" type="image/x-icon">
+
+
+
+        <!--link rel="icon” href=”http://moueza.esy.es/favicon.gif?v=2" type="image/gif" -->
+
+
+    </HEAD>
+    <BODY>
+        <h1>Ajax</h1>
+        <div class="container-fluid">
+
+            <!--	https://getbootstrap.com/docs/4.0/layout/grid/ -->
+            <div class="row">
+                <div class="col-sm">
+                    One of three columns
+                </div>
+                <div class="col-sm">
+                    One of three columns
+                </div>
+                <div class="col-sm">
+                    One of three columns
+                </div>
+            </div>
+
+
+
+
+            <div id="demo">
+                <h1>The XMLHttpRequest Object</h1>
+                <button type="button" onclick="loadDoc()">Change Content</button>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script -->
+        <!-- script src="node_modules/bootstrap/dist/js/bootstrap.min.js"> </script -->
+
+
+
+
+
+        <!-- https://getbootstrap.com/docs/4.0/getting-started/download/ -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"    crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"   crossorigin="anonymous"></script>
+
+        <script src="js.js"></script>
+
+<!-- https://www.w3schools.com/xml/tryit.asp?filename=tryajax_first  -->
+        <script>
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("demo").innerHTML =
+                                this.responseText;
+                    }
+                };
+                xhttp.open("GET", "ajax_info.txt", true);
+                xhttp.send();
+            }
+        </script>
+
+    </BODY>
 
 
 </HTML>
